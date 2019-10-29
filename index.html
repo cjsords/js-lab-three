@@ -4,9 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e4461e22b2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
     <title>JS Lab Three</title>
   </head>
-  <body>
+  <body class="background">
+    <div class="overlay">
+      <form class="form">
+        <h1>My Contacts</h1>
+        <label for="name">Name</label>
+        <input type="text" name="name" required />
+        <label for="email">Email</label>
+        <input type="email" name="email" required />
+        <label for="phone">Phone</label
+        ><input
+          type="tel"
+          name="phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          required
+        />
+        <label for="relation">Relation</label>
+        <input type="text" name="relation" required />
+        <button type="submit">Add</button>
+      </form>
+      <div class="contact-display"></div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,100 @@
+* {
+  font-family: "Maven Pro", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.background {
+  background: url(/background.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.form {
+  background-color: rgb(179, 178, 176, 0.6);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 25px;
+}
+
+.contact-display {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 65%;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.form input {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  border-style: none;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+form button {
+  border-style: none;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.contact-card {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  position: relative;
+  margin: 20px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.delete-button {
+  position: absolute;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  right: -12px;
+  bottom: -12px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0.5px solid black;
+}
+
+i {
+  color: red;
+}
+
+button > * {
+  pointer-events: none;
+}
